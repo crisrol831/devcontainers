@@ -3,3 +3,6 @@ services:
     java-selenium:
         build: ./java-selenium/
         image: devcontainer:java-selenium
+    node:
+        build: ./node
+        image: devcontainer:node
