@@ -6,3 +6,6 @@ services:
     node:
         build: ./node
         image: devcontainer:node
+    mule-server:
+        build: ./mule-server
+        image: devcontainer:mule-server
