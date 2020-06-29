@@ -9,3 +9,6 @@ services:
     mule-server:
         build: ./mule-server
         image: devcontainer:mule-server
+    python3.8:
+        build: ./python3.8
+        image: devcontainer:python3.8
