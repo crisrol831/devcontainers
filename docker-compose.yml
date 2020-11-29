@@ -1,47 +1,14 @@
-version: '3'
+version: "3"
 
-services: 
-    # java_dev:
-    #     build: ./java-selenium/
-    #     image: devcontainer:java-selenium
-    #     container_name: java_dev
-    #     volumes:
-    #         - ../.:/root/ws
-    #     tty: true
-    # js_dev:
-    #     build: ./node
-    #     image: devcontainer:node
-    #     container_name: js_dev
-    #     volumes:
-    #         - ../.:/root/ws
-    #     tty: true
-    # # mule-server:
-    # #     build: ./mule-server
-    # #     image: devcontainer:mule-server
-    # py_dev:
-    #     build: ./python3.8
-    #     image: devcontainer:python3.8
-    #     container_name: py_dev
-    #     volumes:
-    #         - ../.:/root/ws
-    #     ports:
-    #         - '5000:5000'
-    #     tty: true
-    # sf_dev:
-    #     build: ./sfdx
-    #     image: devcontainer:sfdx
-    #     container_name: sf_dev
-    #     volumes:
-    #         - ../.:/root/ws
-    #     tty: true
-    # debian_dev:
-    #     build: ./debian
-    #     image: devcontainer:debian-slim
-    #     container_name: debian_dev
-    #     volumes:
-    #         - ../.:/root/ws
-    #     tty: true
-    latest:
+services:
+    base:
+        # image: mcr.microsoft.com/vscode/devcontainers/base:0-buster
+        image: devcontainer:base-buster
+        container_name: base
+        # volumes:
+        #     - ../JUANATRIP/:/root/workspace
+        tty: true
+    common:
         # image: mcr.microsoft.com/vscode/devcontainers/base:0-buster
         image: devcontainer:latest
         container_name: devcontainer
